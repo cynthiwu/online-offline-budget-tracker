@@ -2,7 +2,7 @@
 
 Explore the [project page](https://github.com/cynthiwu/online-offline-budget-tracker)
 
-View it live on [Heroku](https://cryptic-shore-06162.herokuapp.com/)
+View it live on [Heroku](https://safe-river-31186.herokuapp.com/)
 
 ## Table of Contents
 - [About The Project](#about-the-project)
@@ -11,25 +11,18 @@ View it live on [Heroku](https://cryptic-shore-06162.herokuapp.com/)
 - [Usage](#usage)
   - [Demo](#demo)
 - [Contributing](#contributing)
-- [License](#license)
 - [Contact](#contact)
 
 
 ## About The Project
 
-The goal of this project was to build out the backend of the Workout Tracker Application, using a Mongo database and Mongoose schema to store and query data, along with Express to handle routes. 
+The goal of this project was to build out the backend of the Budget Tracker Application to allow for offline access and functionality. 
+
+A user of the Budget Tracker will be able to add expenses and deposits to their tracker with or without a connection. When entering transactions offline, the total will be populated when brought back online.
 
 <hr>
 
-![Main Snapshot](./public/assets/fitnesstracker.png)
-
-<hr>
-
-![New Workout Snapshot](./public/assets/newworkout.png)
-
-<hr>
-
-![Dashboard Snapshot](./public/assets/dashboard.png)
+![Main Snapshot](./public/images/tracker.png)
 
 <hr>
 
@@ -38,11 +31,14 @@ The goal of this project was to build out the backend of the Workout Tracker App
 This project was built using:
 
 * JavaScript
-* jQuery
 * [Node.js](https://nodejs.org/api/fs.html)
 * [Express.js](https://expressjs.com/)
-* [Mongodb](https://www.mongodb.com/)
+* [Morgan](https://www.npmjs.com/package/morgan)
+* [MongoDB](https://www.mongodb.com/)
 * [Mongoose](https://mongoosejs.com/)
+* Service Worker
+
+
 
 ## Installation
 
@@ -50,7 +46,7 @@ While not necessary to run the program via the live link above, you may get a lo
 
 1. Clone the repo
 ```sh
-git clone git@github.com:cynthiwu/workout-tracker.git 
+git clone git@github.com:cynthiwu/online-offline-budget-tracker.git 
 ```
 
 2. Install NPM packages (i.e., Inquirer)
@@ -60,13 +56,13 @@ npm install
 
 ## Usage
 
-This project can be used to add, track and workouts athat are entered by the user. The user can enter a new workout, continue the most recent workout, or view charts that summarize their workout activity for the past 7 days.
+This project can be used to and tracked deposits and expenses into an online Budget Tracker. When going offline, the tracker will continue to track budget changes, updating the database upon reconnection.
 
 ### Demo
 
 Watch the video below to see how the program works.
 
-![Worktout Tracker Demo](./public/assets/fitnesstracker.gif)
+![Worktout Tracker Demo](./public/images/budgettracker.gif)
 
 ## Contributing
 
@@ -78,14 +74,10 @@ Contributions are what make the open source community such an amazing place to  
 4. Push to the Branch (`git push origin feature/AmazingFeature`)
 5. Open a Pull Request
 
-## License
-
-None
-
 ## Contact
 
 Cynthia Wu - [@cynthia21wu](https://twitter.com/cynthia21wu) - cynthia21wu@gmail.com
 
-Project Link: [https://github.com/cynthiwu/workout-tracker](https://github.com/cynthiwu/workout-tracker)
+Project Link: [https://github.com/cynthiwu/online-offline-budget-tracker](https://github.com/cynthiwu/online-offline-budget-tracker)
 
-Live Link:[https://cryptic-shore-06162.herokuapp.com/](https://cryptic-shore-06162.herokuapp.com/)
+Live Link: [https://safe-river-31186.herokuapp.com/](https://safe-river-31186.herokuapp.com/)
