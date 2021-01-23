@@ -14,10 +14,6 @@ const DATA_CACHE_NAME = "data-cache-v1";
 
 // install
 self.addEventListener("install", function (evt) {
-  // pre cache image data
-//   evt.waitUntil(
-//     caches.open(DATA_CACHE_NAME).then((cache) => cache.add("/api/images"))
-//   );
     
   // pre cache all static assets
   evt.waitUntil(
@@ -76,11 +72,5 @@ self.addEventListener("fetch", function(evt) {
     caches.match(evt.request).then(function(response) {
         return response || fetch(evt.request);
     })
-
-    // caches.open(CACHE_NAME).then(cache => {
-    //   return cache.match(evt.request).then(response => {
-    //     return response || fetch(evt.request);
-    //   });
-    // })
   );
 });
